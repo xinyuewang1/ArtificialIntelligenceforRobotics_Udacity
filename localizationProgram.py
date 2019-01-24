@@ -68,7 +68,7 @@ def move(p, motion, p_move):
             s = p_move * p[(x-motion[0]) % len(p)][(y-motion[1]) % len(p[0])]
             # if motion[0] == 0 and motion[1] == 0:
                 
-            if motion[0] == 0 and motion[1] != 0: # x isn't moving, but y is
+            if motion[0] == 0 and motion[1] != 0:  # x isn't moving, but y is
                 s += (1 - p_move) * p[(x-motion[0]) % len(p)][y % len(p[0])]
             elif motion[0] != 0 and motion[1] == 0:
                 s += (1 - p_move) * p[x % len(p)][(y-motion[1]) % len(p[0])]
