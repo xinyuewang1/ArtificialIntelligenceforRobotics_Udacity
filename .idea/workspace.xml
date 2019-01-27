@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11c0f9c3-7387-4bae-851e-9e6055f8c4c9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/kalmanFilter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2dKF.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localizationProgram.py" beforeDir="false" afterPath="$PROJECT_DIR$/localizationProgram.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,26 +13,43 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="localizationProgram.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/localizationProgram.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="70" column="51" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kalmanFilter.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kalmanFilter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="151" column="38" selection-start-line="151" selection-start-column="38" selection-end-line="151" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="localizationProgram.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/localizationProgram.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="340">
+                  <caret line="70" column="51" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="kalmanFilter.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/kalmanFilter.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="23">
+                  <caret line="160" column="5" lean-forward="true" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="2dKF.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/2dKF.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="189" column="16" selection-start-line="189" selection-start-column="16" selection-end-line="189" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,6 +67,7 @@
         <option value="$PROJECT_DIR$/localizationProgram.py" />
         <option value="$PROJECT_DIR$/localizationProgram.py" />
         <option value="$PROJECT_DIR$/kalmanFilter.py" />
+        <option value="$PROJECT_DIR$/2dKF.py" />
       </list>
     </option>
   </component>
@@ -102,7 +119,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.kalmanFilter">
+  <component name="RunManager" selected="Python.2dKF">
+    <configuration name="2dKF" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ArtificialIntelligenceforRobotics_Udacity" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2dKF.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="kalmanFilter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ArtificialIntelligenceforRobotics_Udacity" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -161,9 +196,11 @@
       <item itemvalue="Python.localizationProgram" />
       <item itemvalue="Python.localizationProgram (1)" />
       <item itemvalue="Python.kalmanFilter" />
+      <item itemvalue="Python.2dKF" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.2dKF" />
         <item itemvalue="Python.kalmanFilter" />
         <item itemvalue="Python.localizationProgram (1)" />
         <item itemvalue="Python.localizationProgram" />
@@ -187,7 +224,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24963397" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3290938" />
@@ -233,8 +270,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kalmanFilter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="151" column="38" selection-start-line="151" selection-start-column="38" selection-end-line="151" selection-end-column="38" />
+        <state relative-caret-position="23">
+          <caret line="160" column="5" lean-forward="true" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2dKF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="189" column="16" selection-start-line="189" selection-start-column="16" selection-end-line="189" selection-end-column="16" />
         </state>
       </provider>
     </entry>
