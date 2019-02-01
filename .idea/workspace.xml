@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11c0f9c3-7387-4bae-851e-9e6055f8c4c9" name="Default" comment="" />
+    <list default="true" id="11c0f9c3-7387-4bae-851e-9e6055f8c4c9" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/printPath.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +22,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="particleFilter.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="particleFilter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/particleFilter.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2652">
@@ -28,6 +30,15 @@
               <folding>
                 <element signature="e#87#105#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="printPath.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/printPath.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
             </state>
           </provider>
         </entry>
@@ -50,6 +61,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>tolerance</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -61,6 +77,7 @@
         <option value="$PROJECT_DIR$/kalmanFilter.py" />
         <option value="$PROJECT_DIR$/2dKF.py" />
         <option value="$PROJECT_DIR$/particleFilter.py" />
+        <option value="$PROJECT_DIR$/printPath.py" />
       </list>
     </option>
   </component>
@@ -235,6 +252,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24963397" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -301,6 +319,13 @@
           <folding>
             <element signature="e#87#105#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/printPath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
         </state>
       </provider>
     </entry>
