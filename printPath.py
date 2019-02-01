@@ -19,11 +19,11 @@
 # ----------
 from pprint import pprint
 
-grid = [[0, 0, 1, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0],
-        [0, 0, 1, 0, 1, 0],
-        [0, 0, 1, 0, 1, 0],
-        [0, 0, 1, 0, 1, 0]]
+grid = [[0, 1, 1, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0]]
 init = [0, 0]
 goal = [len(grid) - 1, len(grid[0]) - 1]
 cost = 1
@@ -59,7 +59,7 @@ def search(grid, init, goal, cost):
     resign = False  # flag set if we can't find expand
 
     tree = {}
-    dis = None
+    # dis = None
 
     while not found and not resign:
         if len(open) == 0:
@@ -75,12 +75,13 @@ def search(grid, init, goal, cost):
 
             if x == goal[0] and y == goal[1]:
                 found = True
-                dis = g
+                # dis = g
             else:
                 for i in range(len(delta)):
                     x2 = x + delta[i][0]
                     y2 = y + delta[i][1]
-                    if x2 >= 0 and x2 < len(grid) and y2 >= 0 and y2 < len(grid[0]):
+                    # if x2 >= 0 and x2 < len(grid) and y2 >= 0 and y2 < len(grid[0]):
+                    if 0 <= x2 < len(grid) and 0 <= y2 < len(grid[0]):
                         if closed[x2][y2] == 0 and grid[x2][y2] == 0:
                             # if it's not visited, not an obstacle
                             g2 = g + cost
@@ -92,10 +93,13 @@ def search(grid, init, goal, cost):
                                 tree[g2] = [(x2, y2)]
                             # interesting, using a matrix to mark visited instead of set or list I was using.
                             # this will make put unvisited into -1 so much easier.
-
+    # print(tree)
+    # pprint(closed)
     pat = [[' ' for col in range(len(grid[0]))] for row in range(len(grid))]
     pat[goal[0]][goal[1]] = '*'
-    curX, curY = tree[g][0]
+    # curX, curY = tree[g][0]
+    curX, curY = goal[0], goal[1]
+    g = closed[goal[0]][goal[1]]
     for i in range(g - 1, 0, -1):
         for x, y in tree[i]:
             # delta_name = ['^', '<', 'v', '>']
