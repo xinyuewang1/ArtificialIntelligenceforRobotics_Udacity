@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11c0f9c3-7387-4bae-851e-9e6055f8c4c9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/AStar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dynamicProgramming.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,20 +13,37 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AStar.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AStar.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
-              <folding>
-                <element signature="e#413#438#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="dynamicProgramming.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/dynamicProgramming.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="306">
+                  <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="AStar.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/AStar.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-726">
+                  <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+                  <folding>
+                    <element signature="e#413#438#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -53,6 +70,7 @@
         <option value="$PROJECT_DIR$/particleFilter.py" />
         <option value="$PROJECT_DIR$/printPath.py" />
         <option value="$PROJECT_DIR$/AStar.py" />
+        <option value="$PROJECT_DIR$/dynamicProgramming.py" />
       </list>
     </option>
   </component>
@@ -104,7 +122,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.AStar">
+  <component name="RunManager" selected="Python.dynamicProgramming">
     <configuration name="2dKF" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ArtificialIntelligenceforRobotics_Udacity" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,7 +159,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="kalmanFilter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dynamicProgramming" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ArtificialIntelligenceforRobotics_Udacity" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -153,7 +171,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kalmanFilter.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dynamicProgramming.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -196,19 +214,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.kalmanFilter" />
       <item itemvalue="Python.2dKF" />
       <item itemvalue="Python.particleFilter" />
       <item itemvalue="Python.printPath" />
       <item itemvalue="Python.AStar" />
+      <item itemvalue="Python.dynamicProgramming" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dynamicProgramming" />
         <item itemvalue="Python.AStar" />
         <item itemvalue="Python.printPath" />
         <item itemvalue="Python.particleFilter" />
         <item itemvalue="Python.2dKF" />
-        <item itemvalue="Python.kalmanFilter" />
       </list>
     </recent_temporary>
   </component>
@@ -306,11 +324,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AStar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="-726">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
           <folding>
             <element signature="e#413#438#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamicProgramming.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
         </state>
       </provider>
     </entry>
