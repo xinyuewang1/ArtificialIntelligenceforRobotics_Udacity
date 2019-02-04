@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11c0f9c3-7387-4bae-851e-9e6055f8c4c9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/dynamicProgramming.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimumPolicy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +16,23 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="dynamicProgramming.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="dynamicProgramming.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/dynamicProgramming.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
+                <state relative-caret-position="187">
                   <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="optimumPolicy.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/optimumPolicy.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="20">
+                  <caret line="69" column="33" selection-end-line="83" selection-end-column="40" />
+                  <folding>
+                    <element signature="e#480#505#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -29,14 +41,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="AStar.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/AStar.py">
+          <file leaf-file-name="printPath.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/printPath.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-726">
-                  <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-                  <folding>
-                    <element signature="e#413#438#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="54">
+                  <caret line="97" column="76" lean-forward="true" selection-start-line="97" selection-start-column="10" selection-end-line="97" selection-end-column="76" />
                 </state>
               </provider>
             </entry>
@@ -71,6 +80,7 @@
         <option value="$PROJECT_DIR$/printPath.py" />
         <option value="$PROJECT_DIR$/AStar.py" />
         <option value="$PROJECT_DIR$/dynamicProgramming.py" />
+        <option value="$PROJECT_DIR$/optimumPolicy.py" />
       </list>
     </option>
   </component>
@@ -122,25 +132,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dynamicProgramming">
-    <configuration name="2dKF" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ArtificialIntelligenceforRobotics_Udacity" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2dKF.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.optimumPolicy">
     <configuration name="AStar" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ArtificialIntelligenceforRobotics_Udacity" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -172,6 +164,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dynamicProgramming.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="optimumPolicy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ArtificialIntelligenceforRobotics_Udacity" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/optimumPolicy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -214,19 +224,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.2dKF" />
       <item itemvalue="Python.particleFilter" />
       <item itemvalue="Python.printPath" />
       <item itemvalue="Python.AStar" />
       <item itemvalue="Python.dynamicProgramming" />
+      <item itemvalue="Python.optimumPolicy" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.optimumPolicy" />
         <item itemvalue="Python.dynamicProgramming" />
         <item itemvalue="Python.AStar" />
         <item itemvalue="Python.printPath" />
         <item itemvalue="Python.particleFilter" />
-        <item itemvalue="Python.2dKF" />
       </list>
     </recent_temporary>
   </component>
@@ -315,27 +325,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/printPath.py">
+    <entry file="file://$PROJECT_DIR$/dynamicProgramming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="103" column="28" lean-forward="true" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
+        <state relative-caret-position="187">
+          <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AStar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-726">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+        <state relative-caret-position="88">
+          <caret line="92" column="16" lean-forward="true" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
           <folding>
             <element signature="e#413#438#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dynamicProgramming.py">
+    <entry file="file://$PROJECT_DIR$/printPath.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
+        <state relative-caret-position="54">
+          <caret line="97" column="76" lean-forward="true" selection-start-line="97" selection-start-column="10" selection-end-line="97" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optimumPolicy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="69" column="33" selection-end-line="83" selection-end-column="40" />
+          <folding>
+            <element signature="e#480#505#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
