@@ -83,6 +83,6 @@ def optimum_policy(grid,goal,cost):
                 policy[x][y] = delta_name[delta.index(list(np.subtract(tree[(x, y)], (x, y))))]
 
     # return policy
-    return value
+    return policy
 
 pprint(optimum_policy(grid, goal, cost))
