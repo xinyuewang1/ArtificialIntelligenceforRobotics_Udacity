@@ -53,6 +53,8 @@ def optimum_policy(grid,goal,cost):
                         change = True
 
                 elif grid[x][y] == 0:
+                    # print("before")
+                    # pprint(value)
                     for a in range(len(delta)):
                         x2 = x + delta[a][0]
                         y2 = y + delta[a][1]
@@ -65,6 +67,8 @@ def optimum_policy(grid,goal,cost):
                                 change = True
                                 value[x][y] = v2
                                 tree[(x, y)] = (x2, y2)
+                    # print('after')
+                    # pprint(value)
 
     policy = [[' ' for col in range(len(grid[0]))] for row in range(len(grid))]
     policy[goal[0]][goal[1]] = '*'
@@ -73,12 +77,12 @@ def optimum_policy(grid,goal,cost):
     for x in range(len(grid)):
         for y in range(len(grid[0])):
             # get rid of obstacles
-            if value[x][y] != 99 and ( [x, y] != goal ) :
+            if value[x][y] != 99 and [x, y] != goal:
                 _ = np.subtract(tree[(x, y)], (x, y))
                 # print(_.tolist())
                 policy[x][y] = delta_name[delta.index(list(np.subtract(tree[(x, y)], (x, y))))]
 
-    return policy
-
+    # return policy
+    return value
 
 pprint(optimum_policy(grid, goal, cost))
