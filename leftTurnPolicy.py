@@ -69,44 +69,93 @@ def optimum_policy2D(grid, init, goal, cost):
     # 3 dimension grid, x, y, heading
     value = [[[math.inf for row in range(len(grid[0]))] for col in range(len(grid))]
              for i in range(len(forward))]
+    policy = [[[' ' for col in range(len(grid[0]))] for row in range(len(grid))]
+              for i in range(len(forward))]
     policy2D = [[' ' for col in range(len(grid[0]))] for row in range(len(grid))]
-    # value: orient, x, y
-    x, y, o = init
-    value[0][x][y] = 0
-    path = [[value[0][x][y], o, x, y]]
-    # 不能单纯考虑某个位置， 而必须考虑整条线路的成本
-    # every possibility shall be considered as a new route and calculate the overall
-    # cost.
-    while [x, y] != goal and path:
-    #     possible move: R, #, L
-    #     pprint(value)
-    #     print(next)
-    #     next.sort(reverse=True)
-        c, o, x, y = path.pop()
-        for orient in range(len(value)):
-            # orient shall only be neighbor orientation
-            # e.g. 0 have 3 and 1
-            poss = 0
-            if orient != (o + 2) % 4:  # only orient next/equal to current one
-                poss += 1
-                x2 = x + forward[orient][0]
-                y2 = y + forward[orient][1]
-                if 0 <= x2 < len(grid) and 0 <= y2 < len(grid[0]) and grid[x2][y2] != 1:
-                    act = (orient - o) % 4
-                    if (orient - o) % 4 == 3:
-                        act = -1
-                    a = action.index(act)
-                    # print(a)
-                    fromThisNeighbor = value[o][x][y] + cost[a]
-                    # next.append([fromThisNeighbor, orient, x2, y2])
-                    if value[orient][x2][y2] > fromThisNeighbor:
-                        value[orient][x2][y2] = fromThisNeighbor
-                        path.append([fromThisNeighbor, orient, x2, y2])
-                        policy2D[x][y] = action_name[a]
 
-    policy2D[goal[0]][goal[1]] = '*'
+    change = True
+
+    while change:
+        # pprint(value)
+        change = False
+
+        for x in range(len(grid)):
+            for y in range(len(grid[1])):
+                for orientation in range(4):
+                    if [x, y] == goal:
+                        if value[orientation][x][y] > 0:  #??
+                            change = True
+                            value[orientation][x][y] = 0
+                            policy[orientation][x][y] = '*'
+                    elif grid[x][y] == 0:
+                        for i in range(len(action)):
+                            o2 = (orientation + action[i]) % 4
+                            x2 = x + forward[o2][0]
+                            y2 = y + forward[o2][1]
+
+                            if 0 <= x2 < len(grid) and 0 <= y2 < len(grid[0]) \
+                                and grid[x2][y2] == 0:
+                                v2 = value[o2][x2][y2] + cost[i]
+                                if v2 < value[orientation][x][y]:
+                                    value[orientation][x][y] = v2
+                                    policy[orientation][x][y] = action_name[i]
+                                    change = True
+                                    pprint(value)
+
+    x, y, orientation = init
+    policy2D[x][y] = policy[orientation][x][y]
+    while policy[orientation][x][y] != '*':
+        if policy[orientation][x][y] == '#':
+            o2 = orientation
+        elif policy[orientation][x][y] == 'R':
+            o2 = (orientation - 1) % 4
+        else:
+            o2 = (orientation + 1) % 4
+        x += forward[o2][0]
+        y += forward[o2][1]
+        orientation = o2
+        # print(orientation, x, y)
+        policy2D[x][y] = policy[orientation][x][y]
 
     return policy2D
+
+    # value: orient, x, y
+    # x, y, o = init
+    # value[0][x][y] = 0
+    # path = [[value[0][x][y], o, x, y]]
+    # # 不能单纯考虑某个位置， 而必须考虑整条线路的成本
+    # # every possibility shall be considered as a new route and calculate the overall
+    # # cost.
+    # while [x, y] != goal and path:
+    # #     possible move: R, #, L
+    # #     pprint(value)
+    # #     print(next)
+    # #     next.sort(reverse=True)
+    #     c, o, x, y = path.pop()
+    #     for orient in range(len(value)):
+    #         # orient shall only be neighbor orientation
+    #         # e.g. 0 have 3 and 1
+    #         poss = 0
+    #         if orient != (o + 2) % 4:  # only orient next/equal to current one
+    #             poss += 1
+    #             x2 = x + forward[orient][0]
+    #             y2 = y + forward[orient][1]
+    #             if 0 <= x2 < len(grid) and 0 <= y2 < len(grid[0]) and grid[x2][y2] != 1:
+    #                 act = (orient - o) % 4
+    #                 if (orient - o) % 4 == 3:
+    #                     act = -1
+    #                 a = action.index(act)
+    #                 # print(a)
+    #                 fromThisNeighbor = value[o][x][y] + cost[a]
+    #                 # next.append([fromThisNeighbor, orient, x2, y2])
+    #                 if value[orient][x2][y2] > fromThisNeighbor:
+    #                     value[orient][x2][y2] = fromThisNeighbor
+    #                     path.append([fromThisNeighbor, orient, x2, y2])
+    #                     policy2D[x][y] = action_name[a]
+    #
+    # policy2D[goal[0]][goal[1]] = '*'
+    #
+    # return policy2D
 
 
 pprint(optimum_policy2D(grid, init, goal, cost))

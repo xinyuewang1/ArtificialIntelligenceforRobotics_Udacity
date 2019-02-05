@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11c0f9c3-7387-4bae-851e-9e6055f8c4c9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/leftTurnPolicy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/optimumPolicy.py" beforeDir="false" afterPath="$PROJECT_DIR$/optimumPolicy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leftTurnPolicy.py" beforeDir="false" afterPath="$PROJECT_DIR$/leftTurnPolicy.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,8 +64,8 @@
           <file leaf-file-name="leftTurnPolicy.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/leftTurnPolicy.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="207">
-                  <caret line="108" column="19" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="19" />
+                <state relative-caret-position="224">
+                  <caret line="114" column="26" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="26" />
                   <folding>
                     <element signature="e#518#543#0" expanded="true" />
                   </folding>
@@ -387,8 +385,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/leftTurnPolicy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="108" column="19" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="19" />
+        <state relative-caret-position="224">
+          <caret line="114" column="26" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="26" />
           <folding>
             <element signature="e#518#543#0" expanded="true" />
           </folding>
