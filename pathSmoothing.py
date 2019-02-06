@@ -47,7 +47,7 @@ def smooth(path, weight_data=0.5, weight_smooth=0.1, tolerance=0.000001):
     #######################
     change = inf
 
-    while change > tolerance:
+    while change >= tolerance:
         for i in range(1, len(newpath)-1):
             xi, yi = newpath[i]
 
